@@ -87,7 +87,7 @@ if __name__ == '__main__':
         try:
             image_np = cv2.cvtColor(image_np, cv2.COLOR_BGR2RGB)
         except:
-            print("Error converting to RGB")
+            print("> ERROR converting to RGB")
 
         # Actual detection. Variable boxes contains the bounding box cordinates for hands detected,
         # while scores contains the confidence for each of these boxes.
