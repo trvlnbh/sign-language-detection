@@ -24,6 +24,16 @@
 3. 손이 초록색 박스안에 다 들어오지 않았을 때 잘려서 저장이 되니 알아서 잘 캡쳐하셈
 
 ## 해상도 변경 방법
+
+#### 프롬프트에서 실행 시
+```buildoutcfg
+# From hands_detection/
+python detect_webcam.py \
+    --width=${WIDTH_VALUE} \
+    --height=${HEIGHT_VALUE}
+```
+
+#### 파이참에서 실행 시
 ##### 1. width
 ```buildoutcfg
 parser.add_argument(
